@@ -1,0 +1,356 @@
+:root{
+    --span:#e1a850;
+    --black:#333;
+    --white:#fff;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4d19b1f;
+}
+/* Header */
+header{
+    padding: 10px;
+    background: #ffbf5b;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav div.midHeader{ 
+    display: flex; 
+    justify-content: space-between;
+}
+nav div.midHeader i{
+    padding: 10px 10px 0px 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul.leftHeader li a ,nav ul.rightHeader li a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 5px 15px;
+}
+nav ul.rightHeader li:hover {
+    background-color: var(--black);
+    border-radius: 15px;
+}
+nav ul.rightHeader li a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
+header section.hero {
+    display: flex;
+    padding: 70px 40px;
+    justify-content: space-around;
+}
+header section.hero .hero-left{
+    padding: 50px;
+    font-size: 40px;
+}
+header section.hero .hero-left span{
+    background-color: black;
+    border-radius: 50px;
+    color: #f4d19b;
+    padding: 10px;
+}
+header section.hero .hero-right {
+    padding: 50px 250px;
+}
+header section.hero .hero-right button{
+    border: 1px black solid;
+    background-color: transparent;
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+/* Section stats */
+section.stats{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: var(--white);
+}
+section.stats div.stat{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;    
+}
+section.stats div.stat span{
+    display: block;
+    font-size: 12px;
+    color: #545151;
+    font-weight: 100;
+}
+/* About Section  */
+section.about{
+    display: flex;
+    padding: 50px 30px 50px 200px;
+    background-color: #fffaf4cc;
+}
+section.about div.aboutLeft{
+    padding: 30px;
+    width: 50%;
+}
+section.about div.aboutReight{
+    padding: 20px;
+    width: 25%;
+}
+section.about div.aboutReight h2{
+    font-size: 40px;
+    padding: 5px;
+}
+section.about div.aboutReight span{
+    border: 1px black solid;
+    border-radius: 50px;
+    padding: 6px 10px;
+    background-color: var(--span);
+}
+/* Features Section */
+section.features{
+    padding: 50px 400px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;    
+}
+section.features div img{
+    width: 50px;
+}
+section.features div.cardOne{
+    grid-column: 1/3;
+    background-color: var(--black);
+    border-radius: 35px;
+    padding: 50px;
+    color: white;
+}
+section.features div.cardOne span{
+    color: #f4d19b;
+}
+section.features div.cardOne button{
+    margin-top: 20px;
+    color: var(--black);
+    background-color: var(--span);
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+section.features div.cardTwo{
+    grid-column: 3/4;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 25px;
+}
+section.features div.cardThree{
+    grid-column: 1/2;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 25px;
+}
+section.features div.cardFour{
+    grid-column: 2/3;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 25px;
+}
+section.features div.cardFive{
+    grid-column: 3/4;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 25px;
+}
+/* Portfolio / Courses Section */
+section.popular-courses{
+    color: white;
+    background-color: var(--black);
+    padding: 50px 30px 50px 200px;
+}
+section.popular-courses img{
+    width: 300px;
+    border-radius: 12px;
+}
+section.popular-courses h2{
+    text-align: center;
+}
+section.popular-courses span{
+    color: var(--span);
+    border: 1px var(--span) solid;
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+section.popular-courses div.course-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+section.popular-courses div.course-cards div.card{
+    background-color: var(--white);
+    border-radius: 16px;
+    color: black;
+}
+section.popular-courses div.card div.course-details{
+    display: flex;
+    justify-content: space-around;
+}
+section.popular-courses div.course-cards div.card h2{
+    padding: 20px ;
+}
+section.popular-courses div.course-cards div.card button{
+   padding: 10px 15px;
+   border: 1px black solid;
+   border-radius: 35px;
+   background-color: transparent;
+   margin-left: 20px;
+   margin-bottom: 10px;
+   cursor: pointer;
+   border: none;
+}
+section.popular-courses div.course-cards div.card button:hover{
+    background-color: var(--span);
+}
+/* Start-learning Section */
+section.start-learning{
+    display: flex;
+    padding: 50px 30px 50px 200px;
+}
+section.start-learning div.learning-left{
+    padding-right: 300px;
+}
+section.start-learning div.learning-left h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+section.start-learning div.learning-left span{
+    background-color: var(--span);
+    border: 1px black solid;
+    padding: 2px 5px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 200;
+}
+section.start-learning div.learning-left p{
+    color: #6a6969;
+    padding-right: 100px;
+}
+section.start-learning div.learning-left ul{
+    list-style: none;
+}
+section.start-learning div.learning-left ul li{
+    font-weight: bold;
+}
+section.start-learning div.learning-left ul li i{
+    background-color: var(--span);
+    border-radius: 50%;
+    padding: 4px;
+    margin: 20px 10px 0px 0px;
+}
+section.start-learning div.learning-right{
+    padding-right: 200px;
+}
+section.start-learning div.learning-right img{
+    width: 400px;
+    border-radius: 50%;
+}
+/* Get-started Section */
+section.get-started{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fabd5f;
+    border-radius: 12px;
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+}
+section.get-started div.get-left img{
+    width: 300px;
+    border-radius: 12px;
+}
+section.get-started div.get-right{
+    padding: 50px;
+    margin-left: 70px;
+    font-weight: bold;
+}
+section.get-started div.get-right p{
+    padding:20px 0px;
+}
+section.get-started div.get-right button{
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fabd5f;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+}
+/* Mobile-app Section */
+section.mobile-app{
+    padding: 50px;
+    text-align: center;
+}
+section.mobile-app h1{
+    font-weight: bold;
+    font-size: 30px;
+}
+section.mobile-app span{
+   background-color: #fabd5f;
+   border: 1px solid black;
+   padding: 4px 13px;
+   border-radius: 35px;
+   font-style: italic;
+}
+section.mobile-app div.app-a{
+   padding: 30px;
+}
+section.mobile-app div.app-a a{
+   background-color: black;
+   color: var(--white);
+   padding: 20px;
+   border-radius: 8px;
+   text-decoration: none;
+   margin: 0px 10px;
+}section.mobile-app div.app-a a img{
+    width: 17px;
+    margin-right: 5px;
+}
+/* Footer */
+footer{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    background-color: black;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-evenly;
+}
+footer div#footerco{
+    grid-column: 1/3;
+}
+footer div.footer-column{
+    color: var(--white);
+    padding: 20px;
+}
+footer div.footer-column p.copyright{
+    margin-top: 50px;
+}
+footer div.footer-column ul{
+    padding: 5px;
+    list-style: none;
+}
+footer div.footer-column ul li{
+    padding: 20px 0px;
+}
+footer div.footer-column ul li a{
+    color: var(--white);
+    text-decoration: none;    
+}
