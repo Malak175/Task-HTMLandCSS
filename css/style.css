@@ -207,14 +207,14 @@ section.popular-courses div.course-cards div.card h2{
     padding: 20px ;
 }
 section.popular-courses div.course-cards div.card button{
-   padding: 10px 15px;
-   border: 1px black solid;
-   border-radius: 35px;
-   background-color: transparent;
-   margin-left: 20px;
-   margin-bottom: 10px;
-   cursor: pointer;
-   border: none;
+    padding: 10px 15px;
+    border: 1px black solid;
+    border-radius: 35px;
+    background-color: transparent;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
 }
 section.popular-courses div.course-cards div.card button:hover{
     background-color: var(--span);
@@ -302,22 +302,22 @@ section.mobile-app h1{
     font-size: 30px;
 }
 section.mobile-app span{
-   background-color: #fabd5f;
-   border: 1px solid black;
-   padding: 4px 13px;
-   border-radius: 35px;
-   font-style: italic;
+    background-color: #fabd5f;
+    border: 1px solid black;
+    padding: 4px 13px;
+    border-radius: 35px;
+    font-style: italic;
 }
 section.mobile-app div.app-a{
-   padding: 30px;
+    padding: 30px;
 }
 section.mobile-app div.app-a a{
-   background-color: black;
-   color: var(--white);
-   padding: 20px;
-   border-radius: 8px;
-   text-decoration: none;
-   margin: 0px 10px;
+    background-color: black;
+    color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0px 10px;
 }section.mobile-app div.app-a a img{
     width: 17px;
     margin-right: 5px;
@@ -353,4 +353,148 @@ footer div.footer-column ul li{
 footer div.footer-column ul li a{
     color: var(--white);
     text-decoration: none;    
+}
+/* Media Queries */
+@media screen and (max-width: 780px) {
+    /* Header */
+    header {
+        padding: 5px;
+    }
+    nav {
+        align-items: center;
+    }
+    nav ul {
+        gap: 10px;
+        text-align: center;
+    }
+    nav div.midHeader {
+        justify-content: center;
+        margin: 10px 0;
+    }
+    header section.hero {
+        padding: 20px;
+        text-align: center;
+    }
+    header section.hero .hero-left {
+        padding: 20px;
+        font-size: 24px;
+    }
+    header section.hero .hero-right {
+        padding: 20px;
+    }
+    header section.hero .hero-right button {
+        margin-top: 15px;
+        padding: 10px 20px;
+    }
+    /* Stats Section */
+    section.stats {
+        padding: 20px;
+        gap: 20px;
+    }
+    section.stats div.stat {
+        font-size: 30px;
+    }
+    section.stats div.stat span {
+        font-size: 10px;
+    }
+    /* About Section */
+    section.about {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    section.about div.aboutLeft,
+    section.about div.aboutReight {
+        width: 100%;
+        padding: 10px;
+    }
+    section.about div.aboutReight h2 {
+        font-size: 28px;
+    }
+    /* Features Section */
+    section.features {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    section.features div.cardOne,
+    section.features div.cardTwo,
+    section.features div.cardThree,
+    section.features div.cardFour,
+    section.features div.cardFive {
+        grid-column: auto;
+        padding: 20px;
+    }
+    /* Popular Courses Section */
+    section.popular-courses {
+        padding: 20px;
+        text-align: center;
+    }
+    section.popular-courses div.course-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+    section.popular-courses img {
+        width: 100%;
+        max-width: 250px;        
+    }
+    /* Start Learning Section */
+    section.start-learning {
+        flex-direction: column;
+        padding: 20px;
+    }
+    section.start-learning div.learning-left {
+        padding-right: 0;
+    }
+    section.start-learning div.learning-right {
+        padding-right: 0;
+    }
+    section.start-learning div.learning-right img {
+        width: 100%;
+        max-width: 300px;
+    }
+    section.start-learning div.learning-left h2,
+    section.start-learning div.learning-left span {
+        font-size: 24px;
+    }
+    /* Get Started Section */
+    section.get-started {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+    section.get-started div.get-left img {
+        width: 100%;
+        max-width: 250px;
+    }
+    section.get-started div.get-right {
+        padding: 20px;
+        margin-left: 0;
+    }
+    section.get-started div.get-right button {
+        padding: 15px 25px;
+    }
+    /* Mobile App Section */
+    section.mobile-app {
+        padding: 20px;
+    }
+    section.mobile-app div.app-a {
+        padding: 15px;
+    }
+    section.mobile-app div.app-a a {
+        display: inline-block;
+        margin: 10px 0;
+    }
+    /* Footer */
+    footer {
+        width: 90%;
+        padding: 20px;
+    }
+    footer div.footer-column {
+        padding: 10px;
+    }
+    footer div.footer-column p.copyright {
+        margin-top: 20px;
+    }
 }
